@@ -43,7 +43,7 @@ public class ImageProcessor {
 	public static void processImage(File f, File resDirectory, String originalSize,
 			String resFolder) throws FileAlreadyExistsException, IOException, NullPointerException {
 
-		String finalPath=resDirectory.getAbsolutePath() + "/drawable-"	+ resFolder + "/" + f.getName();
+		String finalPath=resDirectory.getAbsolutePath() + "/mipmap-"	+ resFolder + "/" + f.getName();
 		
 		File destFile=new File(finalPath);
 		if(destFile.exists())
